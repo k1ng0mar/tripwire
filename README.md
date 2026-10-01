@@ -4,8 +4,8 @@ Compliance early-warning for Saudi SMEs. The product promise is one line:
 
 > Never miss a Saudi business obligation, and know exactly what to do next.
 
-This repo is the interactive prototype of that promise. A working front end on seeded demo
-data, built to test whether the thesis holds before anyone pays for a backend.
+An interactive prototype of that promise: a working front end on seeded demo data, built to
+test whether the thesis holds before anyone pays for a backend.
 
 ## The thesis
 
@@ -28,9 +28,8 @@ workflow attached.
 
 ## What the research supports, and what it does not
 
-The full assessment is in [`docs/research-memo.md`](docs/research-memo.md) with 15 cited
-sources (ZATCA, HRSD, Monsha'at, SDAIA, vendor pricing pages). The parts that shaped this
-prototype:
+An opportunity assessment with 15 cited sources (ZATCA, HRSD, Monsha'at, SDAIA, vendor pricing
+pages) shaped this prototype. The load-bearing claims:
 
 | Claim | Source | Status |
 |---|---|---|
@@ -41,9 +40,9 @@ prototype:
 | Public stable APIs exist for Qiwa, Mudad, GOSI, Balady, Muqeem | none found | Unconfirmed, gating diligence |
 
 Two honest limits on those numbers. No establishment-level dataset by employee band was
-found, so the memo's revenue tables are illustrative scenarios, not TAM, and this repo
-claims no market size. The SME digital-readiness survey in the memo is vendor-sponsored and
-directional.
+found, so any revenue table built on them is an illustrative scenario, not TAM, and this repo
+claims no market size. The SME digital-readiness survey behind the digital-first decision is
+vendor-sponsored and directional.
 
 ## What the prototype covers
 
@@ -94,11 +93,11 @@ this prototype does not have, so the product states its limits instead of implyi
 
 ## Design
 
-Full spec in [`docs/DESIGN.md`](docs/DESIGN.md). In short: light paper instrument, the visual
-language of an airport ops board. Warm paper canvas `#F5F5F2`, white cards, ink navy text,
-hairline borders instead of shadows. Teal `#0D6E66` is reserved for brand and selected states.
-Status color is always semantic: green, amber, red. Inter with tabular numerals so columns of
-figures line up. Density is the point. This is an operations tool.
+Light paper instrument, the visual language of an airport ops board. Warm paper canvas
+`#F5F5F2`, white cards, ink navy text, hairline borders instead of shadows. Teal `#0D6E66` is
+reserved for brand and selected states. Status color is always semantic: green, amber, red.
+Inter with tabular numerals so columns of figures line up. Density is the point. This is an
+operations tool, not a marketing page.
 
 Refused on purpose: gradients, glassmorphism, glow effects, purple AI palettes, fake
 testimonials, vanity metrics.
@@ -146,8 +145,8 @@ persistence, no portal integration, no risk engine. The health score is hardcode
 
 ## Where it goes next
 
-1. Replace `src/data/product.ts` with a real obligation model plus the scoring rules the memo
-   describes, versioned with citations and effective dates.
+1. Replace `src/data/product.ts` with a real obligation model plus versioned scoring rules,
+   each with citations and effective dates.
 2. Concierge MVP before software: secure document upload, structured forms, email ingestion,
    CSV exports, accountant-assisted updates. Prove value without depending on portal access
    that may never be granted.
